@@ -7,7 +7,7 @@
         <input-field>
             <name>greetingName</name>
             <label>Greeting</label>
-            <copyable>true</copyable>
+            <label lang="de-DE">Begrüßung</label>
         </input-field>
     </card>
 </config>
