@@ -25,7 +25,7 @@ class ExamplePageController extends StorefrontController
 
     /**
      * @Since("6.4.0.0")
-     * @Route("/helloworld", name="frontend.swag-training-page-controller.helloworld", methods={"GET"},
+     * @Route("/swag-training/page-controller", name="frontend.swag-training.page-controller", methods={"GET"},
      *                       defaults={"XmlHttpRequest"=true})
      */
     public function getData(Request $request, Context $context): Response
