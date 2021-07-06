@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>SwagTraining PageController configuration</title>
+        <component name="sw-text-field">
+            <name>greetingName</name>
+            <label>Greeting</label>
+            <copyable>true</copyable>
+        </component>
+    </card>
+</config>
