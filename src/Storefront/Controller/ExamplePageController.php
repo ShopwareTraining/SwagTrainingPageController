@@ -18,23 +18,23 @@ class ExamplePageController extends StorefrontController
 {
     private SystemConfigService $systemConfigService;
 
-    /**
-     * ExampleJsonController constructor.
-     * @param SystemConfigService $systemConfigService
-     */
-    public function __construct(SystemConfigService $systemConfigService){
+    public function __construct(SystemConfigService $systemConfigService)
+    {
         $this->systemConfigService = $systemConfigService;
     }
 
     /**
      * @Since("6.4.0.0")
-     * @Route("/helloworld", name="frontend.swag-training-page-controller.helloworld", methods={"GET"}, defaults={"XmlHttpRequest"=true})
+     * @Route("/helloworld", name="frontend.swag-training-page-controller.helloworld", methods={"GET"},
+     *                       defaults={"XmlHttpRequest"=true})
      */
     public function getData(Request $request, Context $context): Response
     {
         $greetingName = $this->systemConfigService->get('SwagTrainingPageController.config.greetingName');
-        return $this->renderStorefront('@SwagTrainingPageController/storefront/page/content/helloworld.html.twig', [
-            'greetingName' => $greetingName
-        ]);
+
+        return $this->renderStorefront(
+            '@SwagTrainingPageController/storefront/page/content/helloworld.html.twig',
+            ['greetingName' => $greetingName]
+        );
     }
 }

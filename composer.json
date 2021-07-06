@@ -1,17 +1,21 @@
 {
-    "name": "swag-training/page-controller",
-    "description": "Example page controller",
-    "type": "shopware-platform-plugin",
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "SwagTraining\\PageController\\": "src/"
-        }
-    },
-    "extra": {
-        "shopware-plugin-class": "SwagTraining\\PageController\\SwagTrainingPageController",
-        "label": {
-            "en-GB": "Example page controller"
-        }
+  "name": "swag-training/shopware6-page-controller",
+  "description": "Example page controller",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "require": {
+    "shopware/core": "^6.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "SwagTraining\\PageController\\": "src/"
     }
+  },
+  "extra": {
+    "shopware-plugin-class": "SwagTraining\\PageController\\SwagTrainingPageController",
+    "label": {
+      "en-GB": "Example page controller",
+      "de-DE": "Beispiel für einen page controller"
+    }
+  }
 }
