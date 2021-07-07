@@ -1,5 +1,5 @@
 {
-  "name": "swag-training/shopware6-page-controller",
+  "name": "swag-training/page-controller",
   "description": "Example page controller",
   "type": "shopware-platform-plugin",
   "license": "MIT",
